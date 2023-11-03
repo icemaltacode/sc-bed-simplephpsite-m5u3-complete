@@ -7,7 +7,7 @@ $phpAge = $phpReleaseDate->diff(new DateTime());
 
 <?php include 'includes/head.php' ?>
 
-<body>
+<body <?= isset($_COOKIE['darkmode']) && $_COOKIE['darkmode'] === 'true' ? 'data-bs-theme="dark"' : '' ?>>
     <?php include 'includes/menu.php' ?>
 
     <div class="container">
